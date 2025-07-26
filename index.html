@@ -542,17 +542,29 @@
             <i class="fab fa-facebook-messenger"></i> Message on Facebook
           </a>
         </div>
-        <form id="contact-form" action="#" method="POST" class="contact-form">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
+       <form id="contact-form" action="#" method="POST" class="contact-form">
+  <input type="text" placeholder="Your Name" required>
+  <input type="email" placeholder="Your Email" required>
+  <textarea
             name="message"
             rows="5"
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
+  <button type="submit">Send Message</button>
+</form>
+
+<!-- 🔽 Put this before the closing </body> tag -->
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Stop actual form submission
+
+    // Optional: simulate delay
+    // setTimeout(() => {
+    window.location.href = "thankyou.html"; // 👈 Make sure this page exists
+    // }, 1000);
+  });
+</script>
       </div>
     </section>
 
@@ -574,15 +586,6 @@
     function toggleMenu() {
       document.getElementById("navLinks").classList.toggle("active");
     }
-  document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault(); // prevent actual form submission
-
-    // Optional alert:
-    // alert("Message sent!");
-
-    // Redirect
-    window.location.href = "thankyou.html";
-  });
 </script>
 
 </html>
