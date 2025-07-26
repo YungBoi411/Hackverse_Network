@@ -10,8 +10,14 @@
     <script defer src="https://kit.fontawesome.com/e9a8e279cf.js" crossorigin="anonymous"></script>
 
     <style>
-      * { margin: 0; padding: 0; box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         background-color: #0e0e0e;
@@ -49,7 +55,9 @@
         font-weight: bold;
         transition: background 0.3s ease;
       }
-      .btn:hover { background-color: #00bfa6; }
+      .btn:hover {
+        background-color: #00bfa6;
+      }
       .section {
         background-color: #1a1a1a;
         padding: 50px 20px;
@@ -111,9 +119,18 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         flex-wrap: wrap;
       }
-      .logo-container { display: flex; align-items: center; gap: 10px; }
-      .logo-img { width: 50px; }
-      .logo-text { font-size: 1.3rem; margin: 0; }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .logo-img {
+        width: 50px;
+      }
+      .logo-text {
+        font-size: 1.3rem;
+        margin: 0;
+      }
       .navbar ul {
         list-style: none;
         display: flex;
@@ -130,10 +147,19 @@
         cursor: pointer;
       }
       @media screen and (max-width: 768px) {
-        .hero h1 { font-size: 1.8rem; }
-        .hero .tagline { font-size: 0.9rem; }
-        .logo-text { font-size: 1rem; }
-        .navbar ul { flex-direction: column; align-items: flex-start; }
+        .hero h1 {
+          font-size: 1.8rem;
+        }
+        .hero .tagline {
+          font-size: 0.9rem;
+        }
+        .logo-text {
+          font-size: 1rem;
+        }
+        .navbar ul {
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
     </style>
     <link rel="icon" type="image/png" href="favicon.png">
@@ -154,26 +180,27 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <h1>Welcome to Hackverse Network</h1>
-        <p class="tagline">Cyber Aware. Always Secure.</p>
-      </div>
-    </section>
-
-    <section id="blog" class="section">
+    <section id="blog" class="section blog-section">
       <div class="container">
         <h2>Latest Blog Posts</h2>
         <div class="blog-posts">
           <div class="post">
             <h3>What is Phishing and How to Avoid It?</h3>
-            <p>Learn how to identify and protect yourself from phishing attacks.</p>
-            <a href="blog-post.html">Read More</a>
+            <p>
+              Phishing is one of the most common attacks. Here's how you can
+              identify and protect yourself from it...
+            </p>
+            <a href="blog-post.html" class="btn">Read More</a>
           </div>
           <div class="post">
-            <h3>Do You Want to Hire a Hacker?</h3>
-            <p>Understand our white-hat hacking services and ethical practices.</p>
-            <a href="blog.html">Read More</a>
+            <h3>Do you want to hire a hacker?</h3>
+            <p>
+              You are reading the right message, At Hackverse Network, we
+              protect people and businesses by staying one step ahead of cyber
+              threats. We don’t guess we Test, Break, and report legally and
+              ethically. Our services are:
+            </p>
+            <a href="blog.html" class="btn">Read More</a>
           </div>
         </div>
       </div>
@@ -182,21 +209,34 @@
     <section id="about" class="section">
       <div class="container">
         <h2>About Us</h2>
-        <p>Hackverse Network is a cybersecurity community that spreads awareness, shares tips, and educates people on how to stay safe in the digital world. Join us in defending against modern cyber threats.</p>
+        <p>
+          Hackverse Network is a cybersecurity community that spreads awareness,
+          shares tips, and educates people on how to stay safe in the digital
+          world. Join us in defending against modern cyber threats.
+        </p>
+
         <div class="social-icons">
           <a href="https://web.facebook.com/profile.php?id=61578348669089" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/hackerverse_network" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/hackerverse_network?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://t.me/hackverse_network" target="_blank"><i class="fab fa-telegram-plane"></i></a>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section contact-section">
       <div class="container">
         <h2>Contact Us</h2>
+        <div class="contact-buttons">
+          <a href="https://wa.me/+14302021083?text=Hello%20Hackverse%20Team%2C%20I%20need%20help%20with%20cybersecurity." target="_blank" class="contact-btn whatsapp">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+          <a href="https://web.facebook.com/profile.php?id=61578348669089" target="_blank" class="contact-btn facebook">
+            <i class="fab fa-facebook-messenger"></i> Message on Facebook
+          </a>
+        </div>
         <form id="contact-form" action="#" method="POST" class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
           <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
           <button type="submit">Send Message</button>
         </form>
@@ -210,16 +250,7 @@
     </footer>
 
     <script>
-      const themeToggle = document.getElementById("theme-toggle");
-      const body = document.body;
-      if (themeToggle) {
-        themeToggle.addEventListener("click", () => {
-          body.classList.toggle("dark-mode");
-          themeToggle.textContent = body.classList.contains("dark-mode") ? "☀️" : "🌙";
-        });
-      }
-
-      document.getElementById("contact-form")?.addEventListener("submit", function (event) {
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
         event.preventDefault();
         window.location.href = "thankyou.html";
       });
