@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackverse Network</title>
-    <script src="https://kit.fontawesome.com/e9a8e279cf.js" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME CDN OPTIMIZED -->
+    <link rel="preconnect" href="https://kit.fontawesome.com">
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com">
+    <script defer src="https://kit.fontawesome.com/e9a8e279cf.js" crossorigin="anonymous"></script>
+
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
       }
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -27,15 +34,15 @@
         background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
         color: #00ffe1;
         text-align: center;
-        padding: 100px 20px;
+        padding: 80px 20px;
       }
       .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
         margin-bottom: 10px;
       }
       .hero .tagline {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 20px;
         color: #ffffffcc;
       }
@@ -53,10 +60,10 @@
       }
       .section {
         background-color: #1a1a1a;
-        padding: 60px 20px;
+        padding: 50px 20px;
       }
       .section h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 15px;
         color: #00ffe1;
       }
@@ -68,15 +75,15 @@
         color: #888;
       }
       .logo {
-        width: 100px;
+        width: 80px;
         margin-bottom: 15px;
       }
       .social-icons {
         margin-top: 20px;
         display: flex;
         justify-content: center;
-        gap: 25px;
-        padding: 30px 0;
+        gap: 20px;
+        padding: 20px 0;
         flex-wrap: wrap;
       }
       .social-icons a {
@@ -85,9 +92,9 @@
         justify-content: center;
         background-color: #1e1e1e;
         color: #fff;
-        font-size: 24px;
-        width: 55px;
-        height: 55px;
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         transition: all 0.3s ease;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -95,114 +102,15 @@
       }
       .social-icons a:hover {
         transform: scale(1.1);
-        color: #fff;
         background: linear-gradient(135deg, #00c6ff, #0072ff);
-      }
-      .contact-section {
-        background-color: #111;
-      }
-      .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        max-width: 500px;
-        margin: auto;
-      }
-      .contact-form input,
-      .contact-form textarea {
-        padding: 10px;
-        background-color: #1e1e1e;
-        border: 1px solid #333;
-        color: #fff;
-        border-radius: 5px;
-      }
-      .contact-form input:focus,
-      .contact-form textarea:focus {
-        outline: none;
-        border-color: #00ffe1;
-      }
-      .contact-form button {
-        background-color: #00ffe1;
-        color: #0e0e0e;
-        font-weight: bold;
-        border: none;
-        padding: 12px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-      }
-      .contact-form button:hover {
-        background-color: #00bfa6;
-      }
-      .contact-buttons {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
-      }
-      .contact-btn {
-        display: inline-flex;
-        align-items: center;
-        padding: 12px 20px;
-        border-radius: 5px;
-        font-weight: bold;
-        font-size: 1rem;
-        text-decoration: none;
-        transition: background 0.3s ease;
-        color: #fff;
-      }
-      .contact-btn i {
-        margin-right: 10px;
-        font-size: 1.2rem;
-      }
-      .whatsapp {
-        background-color: #25d366;
-      }
-      .whatsapp:hover {
-        background-color: #1ebf5a;
-      }
-      .facebook {
-        background-color: #0084ff;
-      }
-      .facebook:hover {
-        background-color: #006fd6;
-      }
-      .blog-posts {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        margin-top: 30px;
-      }
-      .post {
-        background-color: #222;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
-      }
-      .post h3 {
-        color: #00ffe1;
-        margin-bottom: 10px;
-      }
-      .post p {
-        color: #ccc;
-        margin-bottom: 10px;
-      }
-      .post a {
-        color: #00bfa6;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      .post a:hover {
-        text-decoration: underline;
       }
       .site-header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        background: var(--background, #111);
-        color: var(--text-color, #fff);
+        background: #111;
+        color: #fff;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -217,18 +125,16 @@
         gap: 10px;
       }
       .logo-img {
-        width: 60px;
-        animation: bounce-in 1s ease-out;
-        animation-fill-mode: forwards;
+        width: 50px;
       }
       .logo-text {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin: 0;
       }
       .navbar ul {
         list-style: none;
         display: flex;
-        gap: 20px;
+        gap: 15px;
         margin: 0;
         padding: 0;
         flex-wrap: wrap;
@@ -240,40 +146,22 @@
         font-weight: bold;
         cursor: pointer;
       }
-      @keyframes bounce-in {
-        0% {
-          transform: translateY(-20px);
-          opacity: 0;
-        }
-        50% {
-          transform: translateY(10px);
-          opacity: 1;
-        }
-        100% {
-          transform: translateY(0);
-        }
-      }
       @media screen and (max-width: 768px) {
         .hero h1 {
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
         .hero .tagline {
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
-        .site-header {
-          flex-direction: column;
-          align-items: flex-start;
+        .logo-text {
+          font-size: 1rem;
         }
         .navbar ul {
           flex-direction: column;
-          gap: 10px;
-        }
-        .logo-text {
-          font-size: 1.2rem;
+          align-items: flex-start;
         }
       }
     </style>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="favicon.png">
   </head>
   <body>
