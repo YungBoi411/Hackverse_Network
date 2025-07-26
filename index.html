@@ -574,5 +574,13 @@
     function toggleMenu() {
       document.getElementById("navLinks").classList.toggle("active");
     }
+    <script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Stop the form from actually submitting
+    // You can add animations or loading here if you want
+    window.location.href = "thankyou.html"; // Replace with your redirect page
+  });
+</script>
+
   </script>
 </html>
