@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hackverse Network</title>
+    <title>Hackverse CyberSecurity Network</title>
     <!-- FONT AWESOME CDN OPTIMIZED -->
-    <link rel="preconnect" href="https://kit.fontawesome.com">
-    <link rel="dns-prefetch" href="https://kit.fontawesome.com">
-    <script defer src="https://kit.fontawesome.com/e9a8e279cf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
+    <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/e9a8e279cf.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
       * {
@@ -169,22 +173,62 @@
           width: 100%;
           text-align: center;
         }
+        /* === Contact Buttons === */
+        .contact-buttons {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          align-items: flex-start;
+        }
+
+        .contact-btn {
+          display: inline-flex;
+          align-items: center;
+          padding: 12px 20px;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 1rem;
+          text-decoration: none;
+          transition: background 0.3s ease;
+          color: #fff;
+        }
+
+        .contact-btn i {
+          margin-right: 10px;
+          font-size: 1.2rem;
+        }
+
+        .whatsapp {
+          background-color: #25d366;
+        }
+
+        .whatsapp:hover {
+          background-color: #1ebf5a;
+        }
+
+        .facebook {
+          background-color: #0084ff;
+        }
+
+        .facebook:hover {
+          background-color: #006fd6;
+        }
       }
     </style>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
     <header class="site-header">
       <div class="logo-container">
         <img src="Logo.jpg" alt="Hackverse Logo" class="logo-img" />
-        <h1 class="logo-text">Hackverse Network</h1>
+        <h1 class="logo-text">Hackverse CyberSecurity Network</h1>
       </div>
       <nav class="navbar">
         <ul>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><button id="theme-toggle">🌓</button></li>
         </ul>
       </nav>
     </header>
@@ -204,10 +248,10 @@
           <div class="post">
             <h3>Do you want to hire a hacker?</h3>
             <p>
-              You are reading the right message, At Hackverse Network, we
-              protect people and businesses by staying one step ahead of cyber
-              threats. We don’t guess we Test, Break, and report legally and
-              ethically. Our services are:
+              You are reading the right message, At Hackverse CyberSecurity
+              Network, we protect people and businesses by staying one step
+              ahead of cyber threats. We don’t guess, We Test, Break, and report
+              legally and ethically. Our services are:
             </p>
             <a href="blog.html" class="btn">Read More</a>
           </div>
@@ -219,15 +263,26 @@
       <div class="container">
         <h2>About Us</h2>
         <p>
-          Hackverse Network is a cybersecurity community that spreads awareness,
-          shares tips, and educates people on how to stay safe in the digital
-          world. Join us in defending against modern cyber threats.
+          Hackverse CyberSecurity Network is a cybersecurity community that
+          spreads awareness, shares tips, and educates people on how to stay
+          safe in the digital world. Join us in defending against modern cyber
+          threats.
         </p>
 
         <div class="social-icons">
-          <a href="https://web.facebook.com/profile.php?id=61576331931156" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/hackerverse_network?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://t.me/hackverse_network" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+          <a
+            href="https://web.facebook.com/profile.php?id=61578348669089"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/hackerverse_network?igsh=YzljYTk1ODg3Zg=="
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://t.me/hackverse_network" target="_blank"
+            ><i class="fab fa-telegram-plane"></i
+          ></a>
         </div>
       </div>
     </section>
@@ -236,17 +291,31 @@
       <div class="container">
         <h2>Contact Us</h2>
         <div class="contact-buttons">
-          <a href="https://wa.me/+14302021083?text=Hello%20Hackverse%20Team%2C%20I%20need%20help%20with%20cybersecurity." target="_blank" class="contact-btn whatsapp">
+          <a
+            href="https://wa.me/+14302021083?text=Hello%20Hackverse%20Team%2C%20I%20need%20help%20with%20cybersecurity."
+            target="_blank"
+            class="contact-btn whatsapp"
+          >
             <i class="fab fa-whatsapp"></i> Chat on WhatsApp
           </a>
-          <a href="https://web.facebook.com/profile.php?id=61576331931156" target="_blank" class="contact-btn facebook">
+          <a
+            href="https://web.facebook.com/profile.php?id=61578348669089"
+            target="_blank"
+            class="contact-btn facebook"
+          >
+            <br />
             <i class="fab fa-facebook-messenger"></i> Message on Facebook
           </a>
         </div>
         <form id="contact-form" action="#" method="POST" class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
@@ -254,16 +323,17 @@
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Hackverse Network. All rights reserved.</p>
+        <p>&copy; 2025 Hackverse CyberSecurity Network. All rights reserved.</p>
       </div>
     </footer>
 
     <script>
-      document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault();
-        window.location.href = "thankyou.html";
-      });
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          window.location.href = "thankyou.html";
+        });
     </script>
   </body>
 </html>
-
