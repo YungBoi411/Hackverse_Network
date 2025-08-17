@@ -292,41 +292,12 @@
       }
     </style>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="favicon.png">
-
+    <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
     <header class="hero">
       <div class="container">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search blog posts..."
-          onkeyup="filterPosts()"
-          style="
-            padding: 10px;
-            width: 100%;
-            max-width: 400px;
-            margin: 20px auto;
-            display: block;
-          "
-        />
-
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search blog posts..."
-          onkeyup="filterPosts()"
-          style="
-            padding: 10px;
-            width: 100%;
-            max-width: 400px;
-            margin: 20px auto;
-            display: block;
-          "
-        />
-
-        <h1>Hackverse Network</h1>
+        <h1>Hackverse CyberSecurity Network</h1>
         <p class="tagline">Cyber Aware. Always Secure.</p>
       </div>
       <nav>
@@ -354,30 +325,36 @@
         <div class="post" data-title="🔑 What We Do?">
           <h3>🔑 What We Do?</h3>
           <p>
-            <strong>What Ethical Hackers Do?:</strong> Ethical hackers are
-            “legal hackers” we use our hacking skills to protect, not harm. we
-            think like criminals to beat them at their own game all while
-            staying on the right side of the law.
+            <strong>What Ethical Hackers Do?: </strong>
+            <br />Ethical hackers are “legal hackers” we use our hacking skills
+            to protect, not harm. we think like criminals to beat them at their
+            own game all while staying on the right side of the law.
           </p>
           <pre class="code-block">
-"At Hackverse Network, we protect people and businesses by staying one step ahead of cyber threats.
-We don’t guess — we test, break, and report legally and ethically</pre
+  ✔️ At Hackverse CyberSecurity Network, we protect people and businesses by staying one step ahead of
+    cyber threats and attacks.
+  ✔️ We don’t guess, We test, break, and report legally and ethically"</pre
           >
           <p><strong>🔍 Below are more Tips:</strong></p>
           <pre class="code-block">
             
-✔️Penetration Testing: We simulate real-world cyberattacks to find weak spots before hackers do.
-✔️Vulnerability Scanning: Using advanced tools, we scan your systems for bugs and security flaws.
-✔️Social Engineering Tests: We test human vulnerability through phishing and other deception techniques.
-✔️Security Audits: We check your network, firewalls, and apps to ensure they follow security best practices.
-✔️Clear Reporting: You get a detailed report with everything we found plus step-by-step solutions.
+✔️Penetration Testing:
+  We simulate real-world cyberattacks to find weak spots before hackers do.
+✔️Vulnerability Scanning:
+  Using advanced tools, we scan your systems for bugs and security flaws.
+✔️Social Engineering Tests:
+  We test human vulnerability through phishing and other deception techniques.
+✔️Security Audits:
+  We check your network, firewalls, and apps to ensure they follow security best practices.
+✔️Clear Reporting:
+  You get a detailed report with everything we found plus step-by-step solutions.
             </pre
           >
         </div>
 
         <div class="post" data-title="🔑Hire a Hacker">
           <h2>🧠 Our Services</h2>
-          <h3>🔑Hire a Hacker</h3>
+          <h3>Do you want to Hire a Hacker</h3>
           <p>
             <strong>Disclaimer:</strong> Please contact us only if you have a
             legitimate cybersecurity concern or inquiry. (Paid).
@@ -410,11 +387,17 @@ Our services are:
 - Change school results, papers, etc.
 
 6. Location Tracking:
-- Track without being detected
+_ Get realtime gps position of your kids, spouse, or partner. 
+- Track without being detected.
 
-4. Gaming Account Recovery:
-- Recover hacked or Banned account.
+7. Gaming Account Recovery:
+- Recover hacked or Banned account. (Not 100% guaranteed)
 - Hack Game Stats, Mods.
+
+8. Report Scams.
+- Report a scammer and we will take down their page.
+_ Report cyber threats and bullying.
+- Report a scam website.  
 
 Kindly send a message for more info.
         </pre
@@ -456,9 +439,9 @@ Kindly send a message for more info.
     <div><a href="index.html" class="btn">← Back to Home</a></div>
 
     <p style="font-size: 0.9rem; color: #888; margin-top: 20px">
-      ⚖️ <strong>Notice:</strong> Hackverse Network does not offer or support
-      illegal hacking services. All services are performed in authorized test
-      environments or with full client permission.
+      ⚖️ <strong>Notice:</strong> Hackverse CyberSecurity Network does not offer
+      or support illegal hacking services. All services are performed in
+      authorized test environments or with full client consent & permission.
     </p>
     <div class="next-blog">
       <a href="blog-post.html" class="next-btn"> ← Previous Blog </a>
@@ -466,26 +449,12 @@ Kindly send a message for more info.
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Hackverse Network. All rights reserved.</p>
+        <p>&copy; 2025 Hackverse CyberSecurity Network. All rights reserved.</p>
       </div>
     </footer>
     <div class="pagination">
       <a href="blog-post.html">1</a>
       <a href="blog.html">2</a>
     </div>
-
-    <script>
-      function filterPosts() {
-        const input = document
-          .getElementById("searchInput")
-          .value.toLowerCase();
-        const posts = document.querySelectorAll(".post");
-        posts.forEach((post) => {
-          const title = post.getAttribute("data-title").toLowerCase();
-          post.style.display = title.includes(input) ? "block" : "none";
-        });
-      }
-    </script>
   </body>
 </html>
-
